@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 여백/스크롤 초기화 */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  user-select: none; /* 드래그 방지 */
+  white-space: pre; /* 줄바꿈 방지 */
+}
+
+/* 컨테이너에만 스크롤바 적용 */
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* 필요 시 스크롤 표시 */
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+/* SVG를 감싸는 래퍼 */
+#svgContainer {
+  width: 1000px;
+  height: 1000px;
+  transform-origin: 0 0; 
+  transform: translate(0px, 0px) scale(1);
+  position: relative;
+}
+
+svg {
+  width: 100%; /* 부모(.svgWrapper)의 width/height만큼 차지 */
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer; /* 드래그를 시각적으로 표현 */
+  display: block;
+}
+
+
+/* 클릭 가능한 SVG 요소 스타일 */
+.clickable {
+    fill: #ff0000ff; /* 투명 색상 */
+    cursor: pointer; /* 손 모양 커서 */
+    transition: fill 0.3s;
+}
+
+.clickable:hover {
+    fill: #ff4500a0; /* 호버 시 색상 변경 */
+    border: 1px solid black;
+}
+
+/* mID 표시창 스타일 */
+#mIDDisplay {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    pointer-events: none;
+}
+
+/* mID 표시 애니메이션 */
+#mIDDisplay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.bounding-box {
+    fill: none;
+    stroke: red;
+    stroke-dasharray: 4; /* 점선 스타일 */
+}
