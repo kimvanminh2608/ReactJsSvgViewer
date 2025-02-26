@@ -15,7 +15,7 @@ class SVGViewer extends Component{
 
     
     componentDidMount() {
-        fetch('/h06.svg')
+        fetch('/5mb.svg')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -118,105 +118,6 @@ class SVGViewer extends Component{
     }
     
 }
-// const SVGViewer = () => {
-//     const [svgContent, setSvgContent] = useState(null);
-//     const [scale, setScale] = useState(1);
-//     const [offset, setOffset] = useState({ x: 0, y: 0 });
-//     const svgRef = useRef(null);
-    
-//     useEffect(() => {
-//         fetch('/h06.svg')
-//             .then(response => {
-//                 if (!response.ok) {
-//                     throw new Error('Network response was not ok');
-//                 }
-                
-//                 return response.text();
-//             })
-//             .then(svgText => {
-                
-//                 const parser = new DOMParser();
-//                 const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
-//                 const svgElement = svgDoc.querySelector('svg');
-//                 if (svgElement) {
-//                     setSvgContent(svgElement.outerHTML);
-                    
-//                 //     svgElement.querySelectorAll('text').forEach(textElement => {
-//                 //         // Disable text selection
-//                 //         textElement.style.userSelect = 'none';
-//                 //         // Enable text wrapping => solve the issue of text overflow
-//                 //         textElement.style.whiteSpace = 'pre';
-//                 //       });
-//                 // } else {
-//                 //     console.error('Invalid SVG file.');
-//                 }
-//             })
-//             .catch(error => console.error('Error loading SVG file:', error));
-//     }, []);
 
-//     //svgRef.current.isDragging = false;
-//     // svgRef.current.lastX = 0;
-//     // svgRef.current.lastY = 0;
-
-//     const handleWheel = (e) => {
-//         //event.preventDefault();
-        
-//         const delta = Math.sign(e.deltaY) * -0.1;
-//         const newScale = Math.min(Math.max(scale + delta, 0.1), 5);
-//         const scaleChange = newScale / scale;
-//         setScale(newScale);
-//         setOffset(prevOffset => ({
-//             x: prevOffset.x - (e.clientX - svgRef.current.getBoundingClientRect().left / 2) * (scaleChange - 1),
-//             y: prevOffset.y - (e.clientY - svgRef.current.getBoundingClientRect().top / 2) * (scaleChange - 1),
-//         }));
-
-//     };
-
-//     const handleMouseDown = (e) => {
-//         svgRef.current.isDragging = true;
-//         svgRef.current.lastX = e.clientX;
-//         svgRef.current.lastY = e.clientY;
-//     };
-
-//     const handleMouseMove = (e) => {
-//         if (!svgRef.current.isDragging) 
-//             return;
-//         //e.preventDefault();
-//         //element.removeEventListener('wheel', this.handleWheel, { passive: false });
-//         const dx = e.clientX - svgRef.current.lastX;
-//         const dy = e.clientY - svgRef.current.lastY;
-//         setOffset(prevOffset => ({
-//             x: prevOffset.x + dx,
-//             y: prevOffset.y + dy,
-//         }));
-//         svgRef.current.lastX = e.clientX;
-//         svgRef.current.lastY = e.clientY;
-//     };
-
-//     const handleMouseUp = () => {
-//         svgRef.current.isDragging = false;
-//     };
-
-//     return (
-//         <div 
-//             ref={svgRef}
-//             onWheel={handleWheel}
-//             onMouseDown={handleMouseDown}
-//             onMouseMove={handleMouseMove}
-//             onMouseUp={handleMouseUp}
-//             onMouseLeave={handleMouseUp}
-//             style={{
-//                 transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
-//                 cursor: 'grab',
-//                 overflow: 'hidden',
-//                 width: '100%',
-//                 height: '100%',
-//             }}
-//         >
-//             <div dangerouslySetInnerHTML={{ __html: svgContent }} />
-//         </div>
-        
-//     );
-// };
 
 export default SVGViewer;
