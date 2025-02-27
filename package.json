@@ -1,6 +1,8 @@
 {
   "name": "react-svg-viewer",
   "version": "0.1.0",
+  
+  "homepage": "https://kimvanminh2608.github.io/ReactJsSvgViewer",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
@@ -8,6 +10,7 @@
     "@iconify/react": "^5.2.0",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.10.9",
@@ -24,6 +27,8 @@
     }
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
