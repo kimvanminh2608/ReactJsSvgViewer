@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2b16706.css",
-    "main.js": "/static/js/main.074ca54c.js",
-    "index.html": "/index.html",
-    "main.d2b16706.css.map": "/static/css/main.d2b16706.css.map",
-    "main.074ca54c.js.map": "/static/js/main.074ca54c.js.map"
+    "main.css": "/ReactJsSvgViewer/static/css/main.d2b16706.css",
+    "main.js": "/ReactJsSvgViewer/static/js/main.074ca54c.js",
+    "index.html": "/ReactJsSvgViewer/index.html",
+    "main.d2b16706.css.map": "/ReactJsSvgViewer/static/css/main.d2b16706.css.map",
+    "main.074ca54c.js.map": "/ReactJsSvgViewer/static/js/main.074ca54c.js.map"
   },
   "entrypoints": [
     "static/css/main.d2b16706.css",
