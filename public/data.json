@@ -1,0 +1,177 @@
+{
+    "basic_info": {
+      "description_header": "Full-Stack Developer",
+      "description": "As a middle developer with over 5 years of experience in developing, and maintaining high-performance backend systems for complex web applications and microservice systems. My objective is to utilize my skills and contribute to the development of software solutions while continuously improving my abilities. By leveraging my technical expertise and embracing new technologies, I am committed to delivering high quality software and enhancing my skills on a daily basis.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Titan Technology Corporation",
+        "startDate": "2023",
+        "description": "Auvenir project a user-friendly, cloud-based quality management system tailormade for forward-thinking accounting rms. ",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-react-plain",
+            "name": "ReactJs"
+          },
+          {
+            "class": "devicon-sqldeveloper-plain",
+            "name": "SQL"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-azure-plain",
+            "name": "Azure"
+          },
+          {
+            "class": "devicon-redis-plain",
+            "name": "Redis"
+          }
+        ]
+      },
+      {
+        "title": "CNV Holding",
+        "startDate": "2022",
+        "description": "CNV Holdings provides effective online marketing solutions with a diverse system of advertising and customer care services for the customer in Asia ",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-rabbitmq-plain",
+            "name": "RabbitMQ"
+          },
+          {
+            "class": "devicon-mongodb-plain",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-redis-plain",
+            "name": "Redis"
+          }
+        ]
+      },
+      {
+        "title": "FPT Software",
+        "startDate": "2018",
+        "description": "The first company I was working on my internship. I had to develop in many projects, this was company I've started my career.",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-visualbasic-plain",
+            "name": "VB"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-oracle-plain",
+            "name": "Oracle"
+          },
+          {
+            "class": "devicon-sqldeveloper-plain",
+            "name": "SQL"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Titan Technology Corporation",
+        "title": "Full-Stack Developer",
+        "years": "04.2023 - 10/2024",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "REST API",
+          "ReactJs",
+          "Azure",
+          "JavaScript",
+          "Bootstrap",
+          "EF Core",
+          ".NET Core",
+          "SignalR",
+          "SQL"
+        ]
+      },
+      {
+        "company": "CNV Holding",
+        "title": "Software Developer",
+        "years": "06.2022 - 04.2023",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "REST API",
+          "RabbitMQ",
+          "MongoDB",
+          "EF Core",
+          ".NET Core",
+          "Redis",
+          "Elasticsearch"
+        ]
+      },
+      {
+        "company": "HV Group",
+        "title": "Full-Stack Developer",
+        "years": "11.2021 - 06.2022",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "REST API",
+          "Dapper",
+          "SQLServer",
+          "EF Core",
+          ".NET MVC",
+          "Redis",
+          "KendoUI"
+        ]
+      },
+      {
+        "company": "FPT Software",
+        "title": "Full-Stack Developer",
+        "years": "12.2017 - 07.2020",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "REST API",
+          "AngularJs",
+          "SQLServer",
+          "VB",
+          ".NET MVC",
+          "Oracle"
+        ]
+      }
+    ]
+  }

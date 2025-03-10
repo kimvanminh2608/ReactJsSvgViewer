@@ -1,0 +1,83 @@
+{
+    "basic_info": {
+      "name": "Kim Minh",
+      "titles": [ "Full-Stack Developer", "Middle Developer", "Mobile App Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com",
+          "class": "fab fa-instagram"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "Angular",
+          "class": "devicon-angularjs-plain",
+          "level": "80"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain",
+          "level": "85"
+        },
+        {
+          "class": "devicon-visualbasic-plain",
+          "name": "VB",
+          "level": "60"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+        {
+          "class": "devicon-oracle-plain",
+          "name": "Oracle",
+          "level": "60"
+        },
+        {
+          "class": "devicon-sqldeveloper-plain",
+          "name": "SQL",
+          "level": "70"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDb",
+          "level": "70"
+        },
+        {
+          "class": "devicon-azure-plain",
+          "name": "Azure",
+          "level": "70"
+        },
+        {
+          "class": "devicon-redis-plain",
+          "name": "Redis",
+          "level": "70"
+        }
+      ]
+    }
+  }
